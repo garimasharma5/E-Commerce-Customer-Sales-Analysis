@@ -110,8 +110,3 @@ FROM (
     GROUP BY customer_id
     HAVING COUNT(order_id) > 3
 ) AS retention_data;
-
-SELECT * FROM orders;
-SELECT COUNT(*) FROM orders;
-SELECT * FROM orders
-LIMIT 8000;
